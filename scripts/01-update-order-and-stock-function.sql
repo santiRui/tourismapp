@@ -1,0 +1,4 @@
+-- Este script ya no es necesario.
+-- La lógica para actualizar el stock y las órdenes se ha movido
+-- directamente al código de la aplicación en el componente de React.
+-- Puedes eliminar o ignorar este archivo.
