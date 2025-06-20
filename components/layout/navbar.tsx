@@ -38,7 +38,7 @@ export function Navbar() {
     { name: "Autos", href: "/autos", icon: Car },
     { name: "Paquetes", href: "/paquetes", icon: Package },
     // Solo mostrar estadísticas para admins
-    ...(isAdmin ? [{ name: "Estadísticas", href: "/estadisticas", icon: BarChart3 }] : []),
+
   ]
 
   const userItems = [
@@ -48,7 +48,7 @@ export function Navbar() {
 
   const adminItems = [
     { name: "Panel de Admin", href: "/admin", icon: Settings },
-    { name: "Estadísticas", href: "/estadisticas", icon: BarChart3 },
+
   ]
 
   const handleSignOut = async () => {
