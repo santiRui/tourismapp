@@ -668,28 +668,7 @@ export function AdminDashboard() {
                     </Select>
                   </div>
 
-                  <div>
-                    <Label>Fecha</Label>
-                    <Popover open={filterDateOpen} onOpenChange={setFilterDateOpen}>
-                      <PopoverTrigger asChild>
-                        <Button variant="outline" className="w-full justify-start text-left font-normal">
-                          <CalendarIcon className="mr-2 h-4 w-4" />
-                          {filterDate ? format(filterDate, "PPP", { locale: es }) : "Seleccionar fecha"}
-                        </Button>
-                      </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
-                        <Calendar
-                          mode="single"
-                          selected={filterDate}
-                          onSelect={(date) => {
-                            setFilterDate(date)
-                            setFilterDateOpen(false)
-                          }}
-                          initialFocus
-                        />
-                      </PopoverContent>
-                    </Popover>
-                  </div>
+
 
                   <div className="flex items-end">
                     <Button
@@ -842,28 +821,7 @@ export function AdminDashboard() {
                 <div className="space-y-6">
                   {/* Filtros de Reportes */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div>
-                      <Label>Fecha Inicio</Label>
-                      <Popover open={reportDateOpen} onOpenChange={setReportDateOpen}>
-                        <PopoverTrigger asChild>
-                          <Button variant="outline" className="w-full justify-start text-left font-normal">
-                            <CalendarIcon className="mr-2 h-4 w-4" />
-                            {reportStartDate ? format(reportStartDate, "PPP", { locale: es }) : "Seleccionar fecha"}
-                          </Button>
-                        </PopoverTrigger>
-                        <PopoverContent className="w-auto p-0" align="start">
-                          <Calendar
-                            mode="single"
-                            selected={reportStartDate}
-                            onSelect={(date) => {
-                              setReportStartDate(date)
-                              setReportDateOpen(false)
-                            }}
-                            initialFocus
-                          />
-                        </PopoverContent>
-                      </Popover>
-                    </div>
+
 
                     <div>
                       <Label>Cliente</Label>
